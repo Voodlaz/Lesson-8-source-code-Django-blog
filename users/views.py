@@ -21,8 +21,9 @@ def register(request):
             context["registration_form"] = form
     else:
         form = RegisterForm()
-        context['register_form'] = form      
+        context['register_form'] = form
     return render(request, "register.html", context)
+
 
 def logout(request):
     logout(request)
